@@ -13,7 +13,7 @@ export default function EditPost() {
 
     useEffect(() => {
 
-        fetch("http://localhost:4000/post/" + id)
+        fetch("http://65.0.127.223:4000/post/" + id)
             .then(response => {
                 response.json().then(postInfo => {
                     setTitle(postInfo.title);
