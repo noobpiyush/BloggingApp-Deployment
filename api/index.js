@@ -18,7 +18,7 @@ const PORT = 4000
 
 app.use(cors({
     credentials: true,
-    origin: "*",
+    origin: "https://13.232.44.136",
 }))
 app.use(express.json());
 const _dirname = path.dirname("");
