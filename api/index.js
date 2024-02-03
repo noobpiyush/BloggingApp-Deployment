@@ -14,12 +14,13 @@ const uploadMidddleWare = multer({ dest: 'uploads/' });
 const fs = require("fs");
 const Post = require("./models/Post");
 const path = require("path");
-const PORT = 4000
+const PORT = 4000;
 
 app.use(cors({
     credentials: true,
-    origin: "https://13.232.44.136",
-}))
+    origin: "http://13.232.44.136:4000", // Assuming your app is running on port 4000
+}));
+
 app.use(express.json());
 const _dirname = path.dirname("");
 const buildpath = path.join(__dirname,"../client/dist");
