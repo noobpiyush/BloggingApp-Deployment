@@ -7,7 +7,7 @@ export default function Header() {
   const{setUserInfo,userInfo} = useContext(UserContext);
 
   useEffect(function () {
-    fetch("http://localhost:4000/profile", {
+    fetch("http://65.0.127.223:4000/profile", {
       method:'GET',
       credentials: "include",
       // method: "GET",
@@ -21,7 +21,7 @@ export default function Header() {
   }, []);
 
   function logout(){
-    fetch("http://localhost:4000/logout",{
+    fetch("http://65.0.127.223:4000/logout",{
       credentials:"include",
       method: "POST",
     });
