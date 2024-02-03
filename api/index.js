@@ -18,7 +18,7 @@ const PORT = 4000;
 
 app.use(cors({
     credentials: true,
-    origin: "*", // Assuming your app is running on port 4000
+    origin: "http://65.0.127.223:4000",
 }));
 
 app.use(express.json());
