@@ -14,11 +14,11 @@ const uploadMidddleWare = multer({ dest: 'uploads/' });
 const fs = require("fs");
 const Post = require("./models/Post");
 const path = require("path");
-const PORT = process.env.PORT || 4000
+const PORT = 4000
 
 app.use(cors({
     credentials: true,
-    origin: "http://localhost:5173",
+    origin: "*",
 }))
 app.use(express.json());
 const _dirname = path.dirname("");
