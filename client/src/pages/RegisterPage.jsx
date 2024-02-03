@@ -7,7 +7,7 @@ export default function RegisterPage() {
    async function register(ev) {
       ev.preventDefault();
       
-       const response = await fetch("http://localhost:4000/register",{
+       const response = await fetch("http://65.0.127.223:4000register",{
             method: "POST",
             body: JSON.stringify({username,password}),
             headers:{"Content-Type":"application/json"}
